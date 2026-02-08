@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2017 @hirodotexe. All rights reserved.
+// Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
 #ifndef TETRIS_COMMAND_H_
@@ -34,16 +34,16 @@ public:
   bool x() const { return is_beginning_push(x_); }
 
 private:
-  // 0[«]11111111111...111[ª]0...
+  // 0[ï¿½ï¿½]11111111111...111[ï¿½ï¿½]0...
   bool is_during_push(int counter) const { return 0 < counter; }
-  // 0[«]10000000000...000[ª]0...
+  // 0[ï¿½ï¿½]10000000000...000[ï¿½ï¿½]0...
   bool is_beginning_push(int counter) const { return 1 == counter; }
-  // 0[«]00000011111...111[ª]0...
+  // 0[ï¿½ï¿½]00000011111...111[ï¿½ï¿½]0...
   bool is_in_fast_move_phase(int counter) const {
     static const int kDurationTillFastMove = 7;
     return kDurationTillFastMove <= counter;
   }
-  // 0[«]00000001010...101[ª]0...
+  // 0[ï¿½ï¿½]00000001010...101[ï¿½ï¿½]0...
   bool is_frame_to_fast_move(int counter) const {
     static const int kFramesPerRow = 2;
     return is_in_fast_move_phase(counter) && counter % kFramesPerRow == 0;

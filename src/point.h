@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Copyright (c) 2017 @hirodotexe. All rights reserved.
+// Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
 #ifndef TETRIS_POINT_H_
