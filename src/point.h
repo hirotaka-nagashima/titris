@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_POINT_H_
-#define TETRIS_POINT_H_
+#ifndef TITRIS_POINT_H_
+#define TITRIS_POINT_H_
 
 // 2D point, vector.
 struct Point {
@@ -44,4 +44,4 @@ struct Move {
   Point dest;
 };
 
-#endif  // TETRIS_POINT_H_
+#endif  // TITRIS_POINT_H_

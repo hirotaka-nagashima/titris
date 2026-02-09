@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_BEST_SCORES_H_
-#define TETRIS_BEST_SCORES_H_
+#ifndef TITRIS_BEST_SCORES_H_
+#define TITRIS_BEST_SCORES_H_
 
 #include <vector>
 #include <algorithm>   // std::sort()
@@ -28,4 +28,4 @@ private:
   std::vector<int> best_scores_;
 };
 
-#endif // TETRIS_BEST_SCORES_H_
+#endif // TITRIS_BEST_SCORES_H_

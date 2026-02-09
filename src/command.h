@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_COMMAND_H_
-#define TETRIS_COMMAND_H_
+#ifndef TITRIS_COMMAND_H_
+#define TITRIS_COMMAND_H_
 
 #include "window.h"
 
@@ -53,4 +53,4 @@ private:
   int c_, x_;
 };
 
-#endif  // TETRIS_COMMAND_H_
+#endif  // TITRIS_COMMAND_H_

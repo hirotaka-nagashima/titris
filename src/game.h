@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_GAME_H_
-#define TETRIS_GAME_H_
+#ifndef TITRIS_GAME_H_
+#define TITRIS_GAME_H_
 
 #include "graphic.h"
 #include "file_handler.h"
@@ -19,4 +19,4 @@ private:
   FileHandler file_handler_;
 };
 
-#endif // TETRIS_GAME_H_
+#endif // TITRIS_GAME_H_

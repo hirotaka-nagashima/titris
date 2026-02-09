@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_WINDOW_H_
-#define TETRIS_WINDOW_H_
+#ifndef TITRIS_WINDOW_H_
+#define TITRIS_WINDOW_H_
 
 #include <string>
 #include <SDL.h>
@@ -60,4 +60,4 @@ private:
   SDL_Surface* video_surface_;
 };
 
-#endif  // TETRIS_WINDOW_H_
+#endif  // TITRIS_WINDOW_H_

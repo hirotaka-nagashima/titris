@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_BOARD_H_
-#define TETRIS_BOARD_H_
+#ifndef TITRIS_BOARD_H_
+#define TITRIS_BOARD_H_
 
 #include "type.h"
 #include "command.h"
@@ -60,4 +60,4 @@ private:
   Message message_;
 };
 
-#endif  // TETRIS_BOARD_H_
+#endif  // TITRIS_BOARD_H_

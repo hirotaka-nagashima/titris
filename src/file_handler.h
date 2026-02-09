@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_FILE_HANDLER_H_
-#define TETRIS_FILE_HANDLER_H_
+#ifndef TITRIS_FILE_HANDLER_H_
+#define TITRIS_FILE_HANDLER_H_
 
 #include "window.h"
 
@@ -19,4 +19,4 @@ private:
   static const char kScoresUrl[];
 };
 
-#endif  // TETRIS_FILE_HANDLER_H_
+#endif  // TITRIS_FILE_HANDLER_H_

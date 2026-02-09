@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_GRAPHIC_H_
-#define TETRIS_GRAPHIC_H_
+#ifndef TITRIS_GRAPHIC_H_
+#define TITRIS_GRAPHIC_H_
 
 #include "type.h"
 #include "window.h"
@@ -15,7 +15,7 @@ class Blocks;
 
 class Graphic {
 public:
-  Graphic() : window_(480, 432, "TETRIS", "src/resources/icon.png"),
+  Graphic() : window_(480, 432, "TITRIS", "src/resources/icon.png"),
               font_(NULL), bgm_(NULL), se_move_(NULL), se_rotation_(NULL),
               se_shock_(NULL), image_objects_(NULL),
               image_title_(NULL), image_background_(NULL),
@@ -51,4 +51,4 @@ private:
   SDL_Surface* image_game_over_;
 };
 
-#endif  // TETRIS_GRAPHIC_H_
+#endif  // TITRIS_GRAPHIC_H_

@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_INFO_H_
-#define TETRIS_INFO_H_
+#ifndef TITRIS_INFO_H_
+#define TITRIS_INFO_H_
 
 #include <algorithm>  // std::min(), std::max()
 #include "type.h"
@@ -47,4 +47,4 @@ private:
   int frames_per_row_;
 };
 
-#endif  // TETRIS_INFO_H_
+#endif  // TITRIS_INFO_H_

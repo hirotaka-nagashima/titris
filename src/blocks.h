@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_BLOCKS_H_
-#define TETRIS_BLOCKS_H_
+#ifndef TITRIS_BLOCKS_H_
+#define TITRIS_BLOCKS_H_
 
 #include <ctime>  // time()
 #include <vector>
@@ -25,4 +25,4 @@ private:
   std::vector<Block*> blocks_;
 };
 
-#endif  // TETRIS_BLOCKS_H_
+#endif  // TITRIS_BLOCKS_H_

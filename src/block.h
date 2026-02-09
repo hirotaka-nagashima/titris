@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_BLOCK_H_
-#define TETRIS_BLOCK_H_
+#ifndef TITRIS_BLOCK_H_
+#define TITRIS_BLOCK_H_
 
 #include "point.h"
 #include "type.h"
@@ -43,4 +43,4 @@ protected:
   int id_;
 };
 
-#endif  // TETRIS_BLOCK_H_
+#endif  // TITRIS_BLOCK_H_

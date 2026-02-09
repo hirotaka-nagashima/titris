@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Hirotaka Nagashima. All rights reserved.
 //-----------------------------------------------------------------------------
 
-#ifndef TETRIS_TYPE_H_
-#define TETRIS_TYPE_H_
+#ifndef TITRIS_TYPE_H_
+#define TITRIS_TYPE_H_
 
 enum Type {
   kNone = -1,
@@ -17,4 +17,4 @@ enum Type {
   kNumTypes,
 };
 
-#endif // TETRIS_TYPE_H_
+#endif // TITRIS_TYPE_H_
