@@ -7,7 +7,7 @@
 #include "status.h"
 #include "best_scores.h"
 
-const char FileHandler::kScoresUrl[] = "resources/scores.dat";
+const char FileHandler::kScoresUrl[] = "src/resources/scores.dat";
 
 Status FileHandler::LoadBestScores(BestScores* scores) const {
   FILE* scores_file = fopen(kScoresUrl, "r");

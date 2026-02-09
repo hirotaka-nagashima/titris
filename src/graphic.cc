@@ -18,27 +18,27 @@ Status Graphic::Initialize() {
 
   // Load fonts.
   static const int kFontSize = 22;
-  font_ = TTF_OpenFont("resources/font.ttf", kFontSize);
+  font_ = TTF_OpenFont("src/resources/font.ttf", kFontSize);
   if (!font_) {
     fprintf(stderr, "ERROR: %s\n", TTF_GetError());
     return kError;
   }
 
   // Load musics.
-  bgm_         = Mix_LoadMUS("resources/bgm.ogg");
-  se_move_     = Mix_LoadWAV("resources/se_move.ogg");
-  se_rotation_ = Mix_LoadWAV("resources/se_rotation.ogg");
-  se_shock_    = Mix_LoadWAV("resources/se_shock.ogg");
+  bgm_         = Mix_LoadMUS("src/resources/bgm.ogg");
+  se_move_     = Mix_LoadWAV("src/resources/se_move.ogg");
+  se_rotation_ = Mix_LoadWAV("src/resources/se_rotation.ogg");
+  se_shock_    = Mix_LoadWAV("src/resources/se_shock.ogg");
   if (!bgm_ || !se_move_ || !se_rotation_ || !se_shock_) {
     fprintf(stderr, "ERROR: %s\n", Mix_GetError());
     return kError;
   }
 
   // Load images.
-  image_objects_    = window_.LoadOptimizedImage("resources/objects.png");
-  image_title_      = window_.LoadOptimizedImage("resources/title.png");
-  image_background_ = window_.LoadOptimizedImage("resources/background.png");
-  image_game_over_  = window_.LoadOptimizedImage("resources/game_over.png");
+  image_objects_    = window_.LoadOptimizedImage("src/resources/objects.png");
+  image_title_      = window_.LoadOptimizedImage("src/resources/title.png");
+  image_background_ = window_.LoadOptimizedImage("src/resources/background.png");
+  image_game_over_  = window_.LoadOptimizedImage("src/resources/game_over.png");
   if (!image_objects_ || !image_title_ || !image_background_ ||
       !image_game_over_) {
     fprintf(stderr, "ERROR: %s\n", IMG_GetError());
@@ -90,11 +90,11 @@ Status Graphic::DisplayScreen(const Board& board, const Blocks& blocks,
 
   // Information.
   char value[12];
-  sprintf(value, "%6d", info.score());
+  snprintf(value, sizeof(value), "%6d", info.score());
   window_.DrawString(value, 332, 75, font_);
-  sprintf(value, "%5d", info.level());
+  snprintf(value, sizeof(value), "%5d", info.level());
   window_.DrawString(value, 332, 171, font_);
-  sprintf(value, "%5d", info.lines());
+  snprintf(value, sizeof(value), "%5d", info.lines());
   window_.DrawString(value, 332, 243, font_);
 
   window_.Display();
@@ -128,7 +128,7 @@ Status Graphic::DisplayResult(int score, const BestScores& best_scores) {
     // String.
     int best_score = best_scores.best_score(place);
     char line[14];
-    sprintf(line, "%d.%6d", place, best_score);
+    snprintf(line, sizeof(line), "%d.%6d", place, best_score);
     // Color.
     static const SDL_Color kBlack = {0x08, 0x18, 0x20};
     static const SDL_Color kGreen = {0x34, 0x68, 0x56};

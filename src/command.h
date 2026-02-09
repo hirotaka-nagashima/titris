@@ -13,13 +13,13 @@ public:
 
   void Reset() { up_ = down_ = left_ = right_ = c_ = x_ = 0; }
   void Update() {
-    Uint8* key = SDL_GetKeyState(NULL);
-    up_    = key[SDLK_UP]    ? up_ + 1    : 0;
-    down_  = key[SDLK_DOWN]  ? down_ + 1  : 0;
-    left_  = key[SDLK_LEFT]  ? left_ + 1  : 0;
-    right_ = key[SDLK_RIGHT] ? right_ + 1 : 0;
-    c_     = key[SDLK_c]     ? c_ + 1     : 0;
-    x_     = key[SDLK_x]     ? x_ + 1     : 0;
+    const Uint8* key = SDL_GetKeyboardState(NULL);
+    up_    = key[SDL_SCANCODE_UP]    ? up_ + 1    : 0;
+    down_  = key[SDL_SCANCODE_DOWN]  ? down_ + 1  : 0;
+    left_  = key[SDL_SCANCODE_LEFT]  ? left_ + 1  : 0;
+    right_ = key[SDL_SCANCODE_RIGHT] ? right_ + 1 : 0;
+    c_     = key[SDL_SCANCODE_C]     ? c_ + 1     : 0;
+    x_     = key[SDL_SCANCODE_X]     ? x_ + 1     : 0;
   }
 
   bool up() const { return is_beginning_push(up_); }

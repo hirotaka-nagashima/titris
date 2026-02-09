@@ -5,9 +5,9 @@
 #ifndef TETRIS_GRAPHIC_H_
 #define TETRIS_GRAPHIC_H_
 
+#include "type.h"
 #include "window.h"
 
-enum Type;
 class Info;
 class BestScores;
 class Board;
@@ -15,7 +15,7 @@ class Blocks;
 
 class Graphic {
 public:
-  Graphic() : window_(480, 432, "TETRIS", "resources/icon.png"),
+  Graphic() : window_(480, 432, "TETRIS", "src/resources/icon.png"),
               font_(NULL), bgm_(NULL), se_move_(NULL), se_rotation_(NULL),
               se_shock_(NULL), image_objects_(NULL),
               image_title_(NULL), image_background_(NULL),
